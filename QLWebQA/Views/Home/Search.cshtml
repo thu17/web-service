@@ -1,0 +1,28 @@
+﻿@Html.Partial("SearchPartial")
+<!-- start main -->
+<div class="main_bg">
+    <div class="wrap">
+        <div class="main">
+            <!-- start grids_of_3 -->
+            <div class="grids_of_3" id="result">
+
+                <div data-bind="foreach: Comboes">
+                    <div class="grid1_of_3" style="margin-left: 30px">
+                        <a data-bind="attr:{'href' : '/Home/Detail?id=' + IDItem}">
+                            <img data-bind="attr:{src : Image}" />
+                            <h3 data-bind="text: TenItem"></h3>
+                            <div class="price">
+                                <h4 data-bind="text: Gia"></h4>
+                            </div>
+                            <span class="b_btm"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!-- end grids_of_3 -->
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/Search.js"></script>
+@*<scrikpt src="~/Scripts/Search.js" type="text/javascript" defer="defer"></scrikpt>*@

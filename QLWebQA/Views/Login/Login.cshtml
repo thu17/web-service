@@ -1,0 +1,31 @@
+﻿
+<div class="main_bg">
+    <div class="wrap">
+        <div class="main">
+            <div>
+                <div class="contact-form" id="login-area">
+                    <h2>Login</h2>
+                    <form method="post">
+
+                        <div>
+                            <span><label>E-mail</label></span>
+                            <span><input id="email" type="text" style="border-width:1px;border-style:solid;border-color:lightgrey;width:400px;height:10px" ></span>
+                        </div>
+                        <div>
+                            <span><label>Password</label></span>
+                            <span><input id="pwd" type="password" style="border-width:1px;border-style:solid;border-color:lightgrey;width:415px;height:20px"></span>
+                        </div>
+
+                        <div>
+                            <button data-bind="event:{'click' : checkLogin}">Login</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- start footer -->
+<script src="~/Scripts/knockout-3.4.2.js"></script>
+<script src="~/Scripts/Login.js"></script>
